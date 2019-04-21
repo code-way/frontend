@@ -1,0 +1,241 @@
+<html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <!-- font awesome -->
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+      <!--Import Google Icon Font-->
+      <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+      <!-- Compiled and minified CSS -->
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/css/materialize.min.css">
+      <title>Avengers</title>
+      <style>
+        header{
+          background: url(img/a.jpg);
+          background-size: cover;
+          background-position: center;
+          min-height: 1000px;
+        }
+        @media screen and (max-width: 670px){
+          header{
+            min-height: 500px;
+          }
+        }
+        .section{
+          padding-top: 4vw;
+          padding-bottom: 4vw;
+        }
+        .tabs .indicator{
+          background-color: #1a237e;
+        }
+        .tabs .tab a:focus, .tabs .tab a:focus.active{
+          background: transparent;
+        }
+      </style>
+    </head>
+    <body>
+    
+      <!-- navbar -->
+      <header>
+        <nav class="nav-wrapper transparent">
+          <div class="container">
+            <a href="#" class="brand-logo">Marvel</a>
+            <a href="#" class="sidenav-trigger" data-target="mobile-menu">
+              <i class="material-icons">menu</i>
+            </a>
+            <ul class="right hide-on-med-and-down">
+              <li><a href="#photos">Photo's</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#contact">Contact</a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Instagram"> 
+                <i class="fab fa-instagram"></i>
+              </a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Facebook">
+                <i class="fab fa-facebook"></i>
+              </a></li>
+              <li><a href="#" class="tooltipped btn-floating btn-small indigo darken-4" data-position="bottom" data-tooltip="Twitter">
+                <i class="fab fa-twitter"></i>
+              </a></li>
+            </ul>
+            <ul class="sidenav grey lighten-2" id="mobile-menu">
+              <li><a href="#">Photo's</a></li>
+              <li><a href="#">Services</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+        </nav>
+      </header>
+    
+      <!-- photo / grid -->
+      <section class="container section scrollspy" id="photos">
+        <div class="row">
+          <div class="col s12 l4">
+              <img src="img/b.jpg" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Ironman</h2>
+            <p>When an industrialist is captured, he constructs a high-tech armoured suit to escape. Once he manages to escape, he decides to use his suit to fight against evil forces and save the world.</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 l4 offset-l1 push-l7">
+              <img src="img/c.jpg" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1 pull-l5 right-align">
+            <h2 class="indigo-text text-darken-4">Captain</h2>
+            <p>After steve Rogers decides to volunteer as a guinea pig an experiment,his weak body is fully enhanced.A secret nazi orgnisation tries to exploit the technology and he must stant against them</p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col s12 l4">
+              <img src="img/d.jpg" alt="" class="responsive-img materialboxed">
+          </div>
+          <div class="col s12 l6 offset-l1">
+            <h2 class="indigo-text text-darken-4">Marvel</h2>
+            <p>Captain Marvel is an extraterrestrial Kree warrior who finds herself caught in the middle of an intergalactic battle between her people and the Skrulls</p>
+          </div>
+        </div>
+      </section>
+    
+      <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img/street.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+    
+      <!-- services / tabs -->
+      <section class="section container scrollspy" id="services">
+        <div class="row">
+          <div class="col s12 l4">
+            <h2 class="indigo-text text-darken-4">Avengers..</h2>
+            <p>S.H.I.E.L.D. leader Nick Fury is compelled to launch the Avengers Initiative when Loki poses a threat to planet Earth.</p>
+            <p> His squad of superheroes put their minds together to accomplish the task.</p>
+          </div>
+          <div class="col s12 l6 offset-l2">
+            <!-- tabs -->
+            <ul class="tabs">
+              <li class="tab col s6">
+                <a href="#photography" class="active indigo-text text-darken-4">Infinity War</a>
+              </li>
+              <li class="tab col s6">
+                <a href="#editing" class="indigo-text text-darken-4">Endgame</a>
+              </li>
+            </ul>
+            <div id="photography" class="col s12">
+                <p class="flow-text indigo-text text-darken-4">Infinity War</p>
+                <p>The Avengers must stop Thanos and his army from acquiring all the infinity stones. </p>
+                <p>But the mad Titan is prepared to go to any lengths in order to do what he thinks is necessary.</p>
+            </div>
+            <div id="editing" class="col s12">
+                <p class="flow-text indigo-text text-darken-4">Endgame</p>
+                <p>Adrift in space with no food or water, Tony Stark sends a message to Pepper Potts as his oxygen supply starts to dwindle.</p>
+                <p> Meanwhile, the remaining Avengers -- Thor, Black Widow, Captain America and Bruce Banner.</p>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    
+      <!-- parallax -->
+      <div class="parallax-container">
+        <div class="parallax">
+          <img src="img/e.jpg" alt="" class="responsive-img">
+        </div>
+      </div>
+    
+      <!-- contact form -->
+      <section class="section container scrollspy" id="contact">
+        <div class="row">
+          <div class="col s12 l5">
+            <h2 class="indigo-text text-darken-4">whatever it takes!</h2>
+            <p>It's perhaps no surprise that Marvel is not doling out much in the way of plot in the ramp-up for Avengers: Endgame.</p>
+            <p>The latest trailer, like the one before it, leans heavy on sad heroes promising vague action.</p>
+            <p>The lack of anything approaching a spoiler makes sense. Avengers: Endgame represents the culmination of 11 years of orchestration across 21 films.</p>
+            <p>Besides, the Spider-Man: Far From Home trailer already mostly probably confirms that everyone makes it out OK.</p>
+          </div>
+          <div class="col s12 l5 offset-l2">
+            <form>
+              <div class="input-field">
+                <i class="material-icons prefix">email</i>
+                <input type="email" id="email">
+                <label for="email">Your Email</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">message</i>
+                <textarea id="message" class="materialize-textarea" cols="20" rows="20"></textarea>
+                <label for="message">Your Message</label>
+              </div>
+              <div class="input-field">
+                <i class="material-icons prefix">date_range</i>
+                <input type="text" id="date" class="datepicker">
+                <label for="date">Choose a date you need me for...</label>
+              </div>
+              <div class="input-field">
+                <p>Services required:</p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Marvel</span>
+                  </label>
+                </p>
+                <p>
+                  <label>
+                    <input type="checkbox">
+                    <span>Dc</span>
+                  </label>
+                </p>
+              </div>
+              <div class="input-field center">
+                <button class="btn">Submit</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+    
+      <!-- footer -->
+      <footer class="page-footer grey darken-3">
+        <div class="container">
+          <div class="row">
+            <div class="col l6 s12">
+              <h5>About Marvel</h5>
+              <p>Marvel Comics is the brand name and primary imprint of Marvel Worldwide Inc., formerly Marvel Publishing, Inc.</p>
+              <p>Marvel Comics Group, a publisher of American comic books and related media. In 2009, The Walt Disney Company acquired Marvel Entertainment, Marvel Worldwide's parent company</p>
+            </div>
+            <div class="col l4 offset-l2 s12">
+              <h5 class="white-text">Connect</h5>
+              <ul>
+                <li><a class="grey-text text-lighten-3" href="#">Facebook</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Twitter</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Linked In</a></li>
+                <li><a class="grey-text text-lighten-3" href="#">Instagram</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="footer-copyright grey darken-4">
+          <div class="container center-align">&copy; 2018 Photo Ninja</div>
+        </div>
+      </footer>
+    
+      <!-- Compiled and minified JavaScript -->
+      <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0-beta/js/materialize.min.js"></script>
+      <script>
+        $(document).ready(function(){
+          $('.sidenav').sidenav();
+          $('.materialboxed').materialbox();
+          $('.parallax').parallax();
+          $('.tabs').tabs();
+          $('.datepicker').datepicker({
+            disableWeekends: true,
+            yearRange: 1
+          });
+          $('.tooltipped').tooltip();
+          $('.scrollspy').scrollSpy();
+        });
+      </script>
+    </body>
+    </html>
